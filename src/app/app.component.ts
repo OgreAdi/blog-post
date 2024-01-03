@@ -11,22 +11,22 @@ export class AppComponent {
   video =
     {
       id: 1,
-      src: './../assets/videos/pexels-yaroslav-shuraev-8464662 (1080p).mp4'
+      src: './assets/videos/pexels-yaroslav-shuraev-8464662 (1080p).mp4'
     }
   slidesChangeMessage = '';
 
   slides = [
     {
       id: 1,
-      src: './../assets/images/slider1.jpg'
+      src: './assets/images/slider1.jpg'
     },
     {
       id: 2,
-      src: './../assets/images/slider2.jpg'
+      src: './assets/images/slider2.jpg'
     },
     {
       id: 3,
-      src: './../assets/images/slider3.jpg'
+      src: './assets/images/slider3.jpg'
     },
 
   ]
