@@ -1,0 +1,19 @@
+
+
+body{
+    height: auto;
+    width: auto;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,p,article,li{
+    font-family: 'Spectral' , 'poppins';
+
+}
+
+
+video {
+    max-width: 100%;
+    height: auto;
+    padding: 10px 10px 0px 10px;
+  }
