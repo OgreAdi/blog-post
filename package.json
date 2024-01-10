@@ -8,7 +8,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "npx angular-cli-ghpages --dir=dist/blog-post"
-
   },
   "private": true,
   "dependencies": {

@@ -1,4 +1,9 @@
 
+/* Hide the carousel controls */
+.carousel-control {
+  display: none;
+}
+
 
 body{
     height: auto;
@@ -8,12 +13,13 @@ body{
 
 h1,h2,h3,h4,h5,h6,p,article,li{
     font-family: 'Spectral' , 'poppins';
-  
+    /* color: white; */
 }
 
 
 p{
 
+  /* color: white; */
   font-size : 18px;
 }
 

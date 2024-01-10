@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -7,32 +9,70 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog-post';
-  noWrap = false;
-  video =
+  likes : number = 0 ;
+  slides: any[] = [
     {
-      id: 1,
-      src: './assets/videos/pexels-yaroslav-shuraev-8464662 (1080p).mp4'
-    }
-  slidesChangeMessage = '';
-
-  slides = [
-    {
-      id: 1,
-      src: './assets/images/slider1.jpg'
-    },
-    {
-      id: 2,
-      src: './assets/images/slider2.jpg'
-    },
-    {
-      id: 3,
-      src: './assets/images/slider3.jpg'
+      src: './../assets/images/about.jpg',
+      id: '1',
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam, asperiores nisi fugit animi
+      repudiandae? Architecto ratione quia facilis esse.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, impedit doloribus ab, voluptatem possimus aut quos minima inventore repellendus dolor et maxime ducimus illum magni eius eum, sequi nihil laboriosam.
+      `,
+      title : 'title -1 '
     },
 
-  ]
-  onSlideRangeChange(indexes: number[] | void): void {
-    this.slidesChangeMessage = `Slides have been switched: ${indexes}`;
+    {
+      src: './../assets/images/bg.jpg',
+      id: '1',
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam, asperiores nisi fugit animi
+                    repudiandae? Architecto ratione quia facilis esse.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, impedit doloribus ab, voluptatem possimus aut quos minima inventore repellendus dolor et maxime ducimus illum magni eius eum, sequi nihil laboriosam.
+                    `,
+                    title : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam, asperiores nisi fugit animi'
+    },
+    {
+      src: './../assets/images/h3.jpg',
+      id: '1',
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam, asperiores nisi fugit animi
+      repudiandae? Architecto ratione quia facilis esse.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, impedit doloribus ab, voluptatem possimus aut quos minima inventore repellendus dolor et maxime ducimus illum magni eius eum, sequi nihil laboriosam.
+      `,
+      title : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam, asperiores nisi fugit animi'
+    },
+    {
+      src: './../assets/images/d2.jpg',
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam, asperiores nisi fugit animi
+      repudiandae? Architecto ratione quia facilis esse.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, impedit doloribus ab, voluptatem possimus aut quos minima inventore repellendus dolor et maxime ducimus illum magni eius eum, sequi nihil laboriosam.
+      `,
+      title : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam, asperiores nisi fugit animi'
+    },
+    {
+      src: './../assets/images/w4.jpg',
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam, asperiores nisi fugit animi
+      repudiandae? Architecto ratione quia facilis esse.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, impedit doloribus ab, voluptatem possimus aut quos minima inventore repellendus dolor et maxime ducimus illum magni eius eum, sequi nihil laboriosam.
+      `,
+      title : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam, asperiores nisi fugit animi'
+    },
+    {
+      src: './../assets/images/w3.jpg',
+      desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam, asperiores nisi fugit animi
+      repudiandae? Architecto ratione quia facilis esse.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, impedit doloribus ab, voluptatem possimus aut quos minima inventore repellendus dolor et maxime ducimus illum magni eius eum, sequi nihil laboriosam.`,
+      title : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam, asperiores nisi fugit animi'
+    },
+
+  ];
+
+
+
+
+  constructor() {
+
   }
+
+
+  countLike(){
+    this.likes++ ;
+  }
+
+
+
 
 
 }

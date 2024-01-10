@@ -30,7 +30,18 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./src/assets/js/bootstrap-slider.js",
+              "./src/assets/js/bootstrap.min.js",
+              "./src/assets/js/isotope.pkgd.min.js",
+              "./src/assets/js/jquery.fancybox.min.js",
+              "./src/assets/js/jquery.matchHeight.js",
+              "./src/assets/js/jquery.matchHeight.min.js",
+              "./src/assets/js/jquery.min.js",
+              "./src/assets/js/main.js",
+              "./src/assets/js/map.js",
+              "./src/assets/js/swiper.min.js"
+            ]
           },
           "configurations": {
             "production": {

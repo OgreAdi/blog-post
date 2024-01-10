@@ -1,97 +1,354 @@
-<div class="header mt-3 ">
-  <div class="container">
-    <h1 style="text-align: center; font-size: 50px;"> <span style="border-bottom: 2px solid black; ">Varahi Blogs</span></h1>
-  </div>
-</div>
+<div class="wrapper">
+    <div class="wrap">
 
-<Section class=" mt-5 ">
-  <div class="contianer" style="display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;">
-    <h1 style="text-align: center;">Will Ai take over the world ?</h1>
+        <div class="detail-page">
 
-    <div class="container-fluid"
-      style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
-      <mat-card class="example-card">
-        <!-- <mat-card-header> -->
-        <!-- <div mat-card-avatar class="example-header-image"></div> -->
+            <div class="detail-title">
+                <h1>Blog 1 </h1>
+            </div>
 
-        <!-- </mat-card-header> -->
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <mat-card-content>
-              <p style="text-align: justify; text-justify: inter-word;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe animi voluptas quod expedita eum
-                molestias aliquam odit, unde illo iure ullam, eaque neque adipisci odio soluta mollitia architecto!
-                Consequatur maxime quis illum mollitia explicabo iure repudiandae omnis neque dolorum. Non eligendi
-                natus reprehenderit cupiditate error iusto consectetur quod est cum repellendus nostrum libero dolore
-                aut dignissimos laborum quidem illum quasi velit corporis exercitationem, ipsum voluptates a. A et odit
-                dolor ducimus modi adipisci unde voluptate perspiciatis quae possimus exercitationem itaque ut explicabo
-                quidem, quasi sed maiores iure magni! Minus vel facilis eveniet blanditiis nihil quis commodi debitis
-                distinctio odit!
-              </p>
-              <p style="text-align: justify; text-justify: inter-word;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe animi voluptas quod expedita eum
-                molestias aliquam odit, unde illo iure ullam, eaque neque adipisci odio soluta mollitia architecto!
-                Consequatur maxime quis illum mollitia explicabo iure repudiandae omnis neque dolorum. Non eligendi
-                natus reprehenderit cupiditate error iusto consectetur quod est cum repellendus nostrum libero dolore
-                aut dignissimos laborum quidem illum quasi velit corporis exercitationem, ipsum voluptates a. A et odit
-                dolor ducimus modi adipisci unde voluptate perspiciatis quae possimus exercitationem itaque ut explicabo
-                quidem, quasi sed maiores iure magni! Minus vel facilis eveniet blanditiis nihil quis commodi debitis
-                distinctio odit!
-              </p>
-            </mat-card-content>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="detail-meta">
+                <div class="post-meta">
+                    <span class="post-date">
+                        Mar 01, 2017
+                    </span><em>/</em>
+
+                </div>
+                <div class="post-dot">
+                    <span>♦</span>
+                </div>
+                <div class="detai-social">
+                    <a href="#" class="facebook">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a href="#" class="twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="pinterest">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                    <a href="#" class="google">
+                        <i class="fa fa-google-plus-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="post-thumbnail post-thumbnail-large">
+                <carousel [interval]="1500" [showIndicators]="false">
+                    <slide *ngFor="let slide of slides; let index=index">
+                        <div class="img-fluid" style="height: 100%;">
+                            <img [src]="slide.src" alt="image slide"
+                                style=" max-width: 100%; max-height: 500px; object-fit: contain;" class="img">
+                        </div>
+                    </slide>
+                </carousel>
+            </div>
+
+            <div class="cols">
+                <!--colleft-->
+                <div class="colleft">
+
+                    <article class="detail" style="background-color: #e6f1fd; padding:10px;">
+                        <p>Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Donec sollicitudin molestie
+                            malesuada. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Curabitur
+                            aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis
+                            ac lectus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat.
+                            Proin eget tortor risus. Donec rutrum congue leo eget malesuada.</p>
+                        <h4>Small Heading Style</h4>
+                        <p>
+                            Qed ut perspiciatis unde omnis iste natus <a href="#"> sit voluptatem</a> accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae et quasi architecto beatae vitae
+                            dicta sunt explicabo emo enim ipsam voluptatem.
+                        </p>
+                        <blockquote>
+                            <p>
+                                People think focus means saying yes to the thing you’ve got to focus on. But that’s not
+                                what it means at all. It means saying no to the hundred other good ideas that there are.
+                                You have to pick carefully. I’m actually as proud of the things we haven’t done as the
+                                things I have done. Innovation is saying no to 1,000 things. <cite>
+                                    <a href="#">Steve Jobs </a> – Apple Worldwide Developers’ Conference, 1997
+                                </cite>
+                            </p>
+                        </blockquote>
+
+                        <p>Red ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt.</p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem. Ut enim ad minima veniam.</p>
+                    </article>
+                    <!---->
+                    <div class="detail-bottom">
+                        <div class="single-tag single-info">
+                            <p class="caption"><span>Tags Cloud</span> </p>
+                            <div class="tags">
+                                <a href="#"> spotlight</a>
+                                <a href="#"> max in</a>
+                                <a href="#"> special</a>
+                                <a href="3.html"> cloud </a>
+                                <a href="#"> spotlight</a>
+                                <a href="#"> Lorem text</a>
+                                <a href="3.html"> review</a>
+                                <a href="#"> spotlight</a>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="single-info">
+                                    <p class="caption"><span>Drop a like !</span> </p>
+                                    <div class="single-rating">
+                                        <div class="rating-item d-flex"
+                                            style="display: flex;align-items: center; flex-direction: column; justify-content: center;">
+                                            <button class="btn btn-outline-light" (click)="countLike() "> <strong
+                                                    style="color: black;">Like <i
+                                                        class="fa fa-thumbs-up"></i></strong></button>
+                                            <span>{{likes}} likes</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="single-info">
+                                    <p class="caption"><span>Share To</span> </p>
+                                    <div class="single-share">
 
 
-            <video class="object-fit-contain content" controls autoplay loop>
-              <source [src]="video.src">
-            </video>
+                                        <a href="#" class="whatsapp">
+                                            <i class="fa fa-whatsapp"></i>
+                                        </a>
+                                        <a href="#" class="instagram">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
 
-          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="related-post">
+                        <div class="box-detail-caption">
+                            <span>YOU MIGHT ALSO LIKE</span>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 " id="MightLike" *ngFor="let item of slides"
+                                style="max-height: 500px;border: 1px solid #e6f1fd; border-top: none;border-bottom: none;">
+                                <div class="img-responsive d-flex justify-content-center"
+                                    style="max-width: 100%; height: 200px;">
+                                    <img [src]="item?.src" alt="" class="img-fluid" style="object-fit: contain;">
+                                </div>
+                                <p class="p-2" style="text-overflow: ellipsis;font-size: 15px; white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        max-width: 600px;" [innerText]="item?.desc"></p>
+                                <div class="content" style="position: relative;bottom: 0;border-bottom: 1px solid #00539F;">
+                                    <button class="btn d-flex justify-content-center align-items-center"
+                                        style="text-align: center;">Read Blog..</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
 
 
 
 
+
+
+                </div>
+                <!--colright-->
+                <div class="colright">
+                    <!--box-search-->
+                    <div class="box-search-sidebar">
+                        <input type="search" placeholder="Begin typing..." />
+                        <button>Search</button>
+                    </div>
+
+                    <!--box trending-->
+                    <div class="col-caption">
+                        <span> TRENDING POSTS</span>
+                    </div>
+                    <div class="box-trending">
+                        <article class="trending-item" *ngFor="let item of slides , let i = index">
+                            <div class="post-thumb" *ngIf="i == 0 ">
+                                <img [src]="item?.src" alt="Somethin in my way ya ,ooooo">
+                            </div>
+                            <h3 *ngIf="i == 0">
+                                Maecenas semper ante sed lectus egestas.
+                            </h3>
+                        </article>
+                        <ul class="list-trending">
+                            <span *ngFor="let item of slides , let i = index">
+
+                                <li *ngIf="i>0">
+                                    <div class="post-thumb">
+                                        <img alt="something in my way yeah ....0000" [src]="item?.src">
+                                    </div>
+                                    <h3 class="post-title" style="text-overflow: ellipsis;font-size: 15px; white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    max-width: 200px;">{{item?.title}} </h3>
+                                </li>
+                            </span>
+
+
+                        </ul>
+                    </div>
+
+
+
+
+                    <!--box newsletter-->
+                    <div class="col-caption">
+                        <span> NEWSLETTER</span>
+                    </div>
+                    <div class="subcribe-box">
+                        <p class="des">
+                            Enter your email address below to subscribe to my newsletter
+                        </p>
+                        <div class="mc4wp-form-fields">
+                            <p>
+                                <label>Email address: </label>
+                                <input type="email" name="EMAIL" placeholder="Your email address" required="">
+                            </p>
+                            <p>
+                                <input type="submit" value="Subscribe">
+                            </p>
+                            <div style="display: none;"><input type="text" name="_mc4wp_honeypot" value="" tabindex="-1"
+                                    autocomplete="off"></div><input type="hidden" name="_mc4wp_timestamp"
+                                value="1496302723"><input type="hidden" name="_mc4wp_form_id" value="4899"><input
+                                type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
+                        </div>
+                        <div class="mc4wp-response"></div>
+                    </div>
+
+                    <!--box tab-->
+
+
+                    <!--box advertisement-->
+                    <div class="col-caption">
+                        <span> advertisement</span>
+                    </div>
+                    <div class="box-ads">
+                        <img alt="" src="./assets/images/ads.jpg" />
+                    </div>
+                    <div class="box-ads">
+                        <img alt="" src="./assets/images/ads.jpg" />
+                    </div>
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
         </div>
-      </mat-card>
 
+        <!--bottom-->
+        <!-- <div class="bottom">
+          <div class="bottom-inner">
+              <div class="bottom-col">
+                  <div class="col-caption">
+                      <span>RECENT POST</span>
+                  </div>
+                  <ul class="recent-post">
+                      <li>
+                          <p><a href="single-gallery.html">	Maecenas semper ante sed lectus egestas.</a></p>
+                      </li>
+                      <li>
+                          <p><a href="single.html">	Proin eget tortor risus.</a></p>
+                      </li>
+
+                      <li>
+                          <p><a href="single-fullwidth-special.html">	The beautifull girl.</a></p>
+                      </li>
+
+                      <li>
+                          <p><a href="single-fullwidth-three-column.html">	Simply dummy text</a></p>
+                      </li>
+
+                      <li>
+                          <p><a href="single-audio.html">	What The Font</a></p>
+                      </li>
+                  </ul>
+              </div>
+              <div class="bottom-col">
+                  <div class="col-caption">
+                      <span>TAG CLOUD</span>
+                  </div>
+                  <div class="list-tags">
+                      <p class="hidden"></p>
+                      <a href="#"> special</a>
+                      <a href="3.html"> USA</a>
+                      <a href="#"> spotlight</a>
+                      <a href="#"> Days news</a>
+                      <a href="3.html"> review</a>
+                      <a href="#"> spotlight</a>
+                      <a href="#"> max in</a>
+                      <a href="#"> special</a>
+                      <a href="3.html"> cloud </a>
+                      <a href="#"> spotlight</a>
+                      <a href="#"> Lorem text</a>
+                      <a href="3.html"> review</a>
+                      <a href="#"> spotlight</a>
+                      <a href="#"> sky blue</a>
+                      <a href="3.html"> review</a>
+                      <a href="#"> hot news</a>
+                      <a href="#"> ciz themes</a>
+                      <a href="3.html"> review</a>
+                      <a href="#"> spotlight</a>
+                      <a href="#"> spotlight</a>
+                      <a href="#"> Lorem text</a>
+                      <a href="3.html"> review</a>
+                      <a href="#"> spotlight</a>
+                      <a href="#"> sky blue</a>
+                      <a href="3.html"> review</a>
+                  </div>
+              </div>
+              <div class="bottom-col">
+                  <div class="col-caption">
+                      <span>INSTAGRAM</span>
+                  </div>
+                  <ul class="instagram-pics">
+                      <li>
+                          <a href="#">
+                              <img src="images/i1.jpg" alt="" />
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="images/i2.jpg" alt="" />
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="images/i3.jpg" alt="" />
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="images/i4.jpg" alt="" />
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="images/i5.jpg" alt="" />
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <img src="images/i6.jpg" alt="" />
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="clearfix"></div>
+          </div>
+      </div> -->
     </div>
-
-      <div class="container" style="display: flex;
-      justify-content: flex-start;
-      align-items: center;">
-        <button aria-hidden="true" aria-label="Example home icon" style="margin: 10px; border-radius: 50%;"> <i class="fa fa-share"></i></button>
-        <button aria-hidden="true" aria-label="Example home icon" style="margin: 10px;border-radius: 50%;"><i class="fa fa-heart"></i></button>
-        <button aria-hidden="true" aria-label="Example home icon" style="margin: 10px;border-radius: 50%;"><i class="fa fa-download"></i></button>
-
-      </div>
-  </div>
-</Section>
-
-
-<Section class="mt-5 pb-5">
-  <div class="header mt-3 ">
-    <div class="container">
-      <h1 style="text-align: left" ><span style="border-bottom: 1px solid black;"> More Insights</span></h1>
-    </div>
-  </div>
-
-  <div class="container">
-    <carousel [itemsPerSlide]="3"
-          [singleSlideOffset]="false"
-          [noWrap]="!noWrap"
-          [interval]="0"
-          [startFromIndex]="5"
-          (slideRangeChange)="onSlideRangeChange($event)">
-  <slide *ngFor="let slide of slides; let index=index" style="height: 200px; padding: 10px; margin: 10px;">
-    <img [src]="slide.src" alt="image slide" style="display: block; width: 100%;">
-    <div class="carousel-caption" >
-      <h4>Slide {{index}}</h4>
-    </div>
-  </slide>
-</carousel>
-  </div>
-</Section>
+</div>
